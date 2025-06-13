@@ -1,0 +1,167 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 100vh;
+  background: #fff;
+  padding-bottom: 20px;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  
+  transform-style: preserve-3d;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  margin: 0px 20px;
+}
+
+ul li:before {
+  /* content: ""; */
+  position: absolute;
+  bottom: -10px;
+  left: -5px;
+  width: 100%;
+  height: 10px;
+  background: #2a2a2a;
+  transform-origin: top;
+  transform: skewX(-41deg);
+}
+
+ul li:after {
+  /* content: ""; */
+  position: absolute;
+  top: 5px;
+  left: -9px;
+  width: 9px;
+  height: 100%;
+  background: #2a2a2a;
+  transform-origin: right;
+  transform: skewY(-49deg);
+}
+
+ul li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  background: #2a2a2a;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 30px !important;
+  transition: 1.5s ease-out;
+   border-radius: 20%; 
+}
+
+ul li:hover span {
+  z-index: 1000;
+  transition: 0.3s;
+  color: #fff;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+ul li:hover span:nth-child(5) {
+  transform: translate(0px, -40px);
+  opacity: 1;
+}
+ul li:hover span:nth-child(4) {
+  transform: translate(0px, -30px);
+  opacity: 0.8;
+}
+ul li:hover span:nth-child(3) {
+  transform: translate(0px, -20px);
+  opacity: 0.6;
+}
+ul li:hover span:nth-child(2) {
+  transform: translate(0px, -10px);
+  opacity: 0.4;
+}
+ul li:hover span:nth-child(1) {
+  transform: translate(0px, 0px);
+  opacity: 0.2;
+}
+
+
+ul li:nth-child(1):hover span {
+  background: #4267b2 !important; /* Facebook */
+}
+ul li:nth-child(2):hover span {
+  background: #1da1f2 !important; /* Twitter */
+}
+ul li:nth-child(3):hover span {
+  background: #ea6e96 !important; /* Instagram */
+}
+ul li:nth-child(4):hover span {
+  background: #0a66c2 !important; /* LinkedIn */
+}
+ul li:nth-child(5):hover span {
+  background: #25d366 !important; /* WhatsApp */
+}
+ul li:nth-child(6):hover span {
+  background: #ff0000 !important; /* YouTube */
+}
+ul li:nth-child(7):hover span {
+  background: #fffc00 !important; /* Snapchat */
+  color: #000 !important;
+}
+ul li:nth-child(8):hover span {
+  background: #000000 !important; /* TikTok */
+}
+ul li:nth-child(9):hover span {
+  background: #bd081c !important; /* Pinterest */
+}
+ul li:nth-child(10):hover span {
+  background: #0088cc !important; /* Telegram */
+}
+ul li:nth-child(11):hover span {
+  background: #333 !important; /* GitHub  */
+}
+
+@media (max-width: 600px) {
+  ul {
+    flex-wrap: wrap; /* يسمح للعناصر بالنزول لسطر جديد */
+    justify-content: center;
+    gap: 10px;
+    transform: none; /* نلغي الدوران على الموبايل */
+  }
+
+  ul li {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+
+  ul li span {
+    font-size: 24px !important;
+  }
+
+  ul li:hover span:nth-child(5) {
+    transform: translateY(-20px);
+  }
+  ul li:hover span:nth-child(4) {
+    transform: translateY(-15px);
+  }
+  ul li:hover span:nth-child(3) {
+    transform: translateY(-10px);
+  }
+  ul li:hover span:nth-child(2) {
+    transform: translateY(-5px);
+  }
+  ul li:hover span:nth-child(1) {
+    transform: translateY(0);
+  }
+}
