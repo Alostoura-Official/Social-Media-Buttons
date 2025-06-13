@@ -17,7 +17,7 @@
 لقطة توضح تصميم الأزرار:
 
 <p align="center">
-  <img alt="معاينة أزرار التواصل الاجتماعي" src="social-media-preview.gif" style="width: 300px; border-radius: 15px;">
+  <img alt="معاينة أزرار التواصل الاجتماعي" src="social-media-preview.gif" style="width: 900px; height: 250px; margin: 15px; border-radius: 50%; object-fit: cover;">
 </p>
 
 ---
